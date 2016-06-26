@@ -4,5 +4,5 @@ class MuffledCalculator:
     def calc(self, expr):
         try:
             return eval(expr)
-        except (ZeroDivisionError, TypeError) as e:
+        except (ZeroDivisionError, NameError) as e:
             print(e)
